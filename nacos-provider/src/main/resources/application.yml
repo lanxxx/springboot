@@ -1,0 +1,22 @@
+server:
+  port: 8763
+spring:
+  profiles:
+    active: usage_message
+  rabbitmq:
+    port: 5672
+  application:
+    name: nacos-consuer
+  activemq:
+    broker-url: tcp://localhost:61616
+    user: admin
+    password: admin
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+tutorial:
+  client:
+    duration: 10000
+
+
